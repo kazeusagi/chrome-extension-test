@@ -1,10 +1,7 @@
 {
   "name": "Chrome Extensions",
   "image": "node:24-bookworm",
-  "runArgs": [
-    "--env-file",
-    ".devcontainer/.env"
-  ],
+  "runArgs": ["--env-file", ".devcontainer/.env"],
   "remoteEnv": {
     "PATH": "/home/node/.bun/bin:${containerEnv:PATH}"
   },
@@ -25,7 +22,6 @@
       "extensions": [
         "biomejs.biome",
         "oderwat.indent-rainbow",
-        "wix.vscode-import-cost",
         "oven.bun-vscode"
       ]
     }
