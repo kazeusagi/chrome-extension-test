@@ -1,0 +1,5 @@
+.env
+.ccode
+
+node_modules
+bun.lock

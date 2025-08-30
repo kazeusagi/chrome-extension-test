@@ -1,0 +1,33 @@
+{
+  "name": "Chrome Extensions",
+  "image": "node:24-bookworm",
+  "runArgs": [
+    "--env-file",
+    ".devcontainer/.env"
+  ],
+  "remoteEnv": {
+    "PATH": "/home/node/.bun/bin:${containerEnv:PATH}"
+  },
+  "remoteUser": "node",
+  "workspaceFolder": "/home/node/app",
+  "initializeCommand": ".devcontainer/initializeCommand.sh", // 初期化コマンド
+  "postCreateCommand": ".devcontainer/postCreateCommand.sh", // 起動時コマンド
+  "mounts": [
+    "source=${localWorkspaceFolder},target=${containerWorkspaceFolder},type=bind", // ワークスペース
+    "source=${localWorkspaceFolder}/.ccode/.claude,target=/home/node/.claude,type=bind", // claude
+    "source=${localWorkspaceFolder}/.ccode/.claude.json,target=/home/node/.claude.json,type=bind" // claude settings json
+  ],
+  "features": {
+    // "ghcr.io/devcontainers/features/common-utils:2": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "biomejs.biome",
+        "oderwat.indent-rainbow",
+        "wix.vscode-import-cost",
+        "oven.bun-vscode"
+      ]
+    }
+  }
+}
