@@ -1,0 +1,8 @@
+<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <!-- Name text -->
+  <text x="12" y="11" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#FF9900">Name</text>
+  
+  <!-- Account name display -->
+  <rect x="4" y="16" width="16" height="2" rx="1" fill="#232F3E"/>
+  <rect x="6" y="19" width="12" height="1.5" rx="0.75" fill="#146EB4"/>
+</svg>
