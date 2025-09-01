@@ -88,8 +88,9 @@
 本プライバシーポリシーに関するご質問は以下までお問い合わせください。
 
 **連絡先情報**
+
 - メール: toshiki1098@gmail.com
-- 開発者: kazeusagi
+- 開発者: [kazeusagi](https://github.com/kazeusagi)
 
 ## 12. 準拠法
 
